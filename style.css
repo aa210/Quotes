@@ -1,0 +1,62 @@
+/*change font*/
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
+
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter|Comfortaa|Fjalla+One|Modak|Poiret+One|Poppins|Questrial|Alegreya+Sans+SC|Shadows+Into+Light';
+@import 'https://fonts.googleapis.com/css?family=Arapey';
+
+
+body{
+  background-color:#1D1E1F; 
+  margin: auto;
+  color:#D6D6D6;
+  width:80%;
+  font-family:Alegreya Sans SC;
+}
+h1{
+  color:#D6D6D6;
+  padding: 4% 0% 2%;
+  font-size:2em;
+  text-align:center;
+  
+} 
+.quoteBody{
+  border-radius:70px;
+  text-align:center;
+}
+.btn{
+  border:1px solid #D6D6D6;
+  background-color:#1D1E1F;
+  padding:10px;
+  font-size:.8em;
+  
+  
+}
+a{color:#D6D6D6;}
+
+.icon-twitter:hover{color:#1D1E1F;}
+
+.btn:hover{
+  color:#1D1E1F;
+  background-color: white;
+}
+
+.blockquote{
+  font-size:2.7em; 
+  color:#D6D6D6;
+  font-family:Shadows Into Light, cursive;
+  padding: 5% 0%; 
+  text-align:left;
+}
+footer{
+  text-align:right; 
+  font-size:1.5em;
+  color:#D6D6D6;
+  font-family:Shadows Into Light, cursive;
+  padding: 5% 0%;
+
+  
+}
+
+
+
+/*.btn:hover{ color:white; background-color:black;}*/
