@@ -1,13 +1,15 @@
 $(document).ready(function() {
+ 
+  $('#newQuote').click(function(){  
   
-$.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=30&callback=%22",function(data){
+    
+$.getJSON("https://favqs.com/api/qotd",function(json){
   
  //when newQuote is clicked... 
-$('#newQuote').click(function(){  
-  
+
 
 //to retrieve random quotes from JSON
-var randomQuoteIndex = Math.floor((Math.random() * 29) + 0);
+//var randomQuoteIndex = Math.floor((Math.random() * 29) + 0);
 
 
 // random number generator for RGB values and string. 
@@ -17,8 +19,8 @@ var randomQuoteIndex = Math.floor((Math.random() * 29) + 0);
     
   var fullColor = colorChoice[colorIndex];
   
-var quote =  data[randomQuoteIndex].content + "</p>";
-var footer = data[randomQuoteIndex].title;
+var quote =  json.quote.body + "</p>";
+var footer = json.quote.author;
  
 // animate blockquote text color.
  $(".blockquote").animate({opacity:0.5}, 500, function() {
